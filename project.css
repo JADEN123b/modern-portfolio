@@ -16,11 +16,15 @@ body {
     margin-bottom: 2rem;
 }
 
-.sidebar {
+.sidebar-icon {
     background-color: #000;
     color: #fff;
     padding: 20px;
     width: 200px;
+}
+.sidebar{
+    margin-top: 1rem;
+    display: block;
 }
 
 .sidebar ul {
@@ -31,25 +35,54 @@ body {
 .sidebar li {
     margin: 15px 0;
 }
-.sidebar-icon{
-    
+.socials {
+    margin-top: 2rem;
+}
+.text {
+    font-size: 0.75rem;
 }
 main {
     padding: 20px;
     flex-grow: 1;
 }
+main p{
+    font-size: 0.875rem;
+    color: #6b7280;
+}
 
 .recent-projects, .testimonials {
     margin-bottom: 20px;
+    width: 80%;
+    padding: 2rem;
 }
-
+ h2{
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+}
 .project {
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,2, minmax(0, 1fr));
+    gap: 1.5rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .project img {
     width: 100%;
     height: auto;
+    margin-bottom: 1rem;
+}
+ h3{
+    font-size: 1.25rem; 
+}
+.project a{
+    margin-top: 0.5rem;
+    display: inline-block;
+    font-size: 1.125rem;
+    color: #000;
 }
 
 .load-more {
@@ -61,12 +94,33 @@ main {
 }
 
 .testimonials {
-    background: linear-gradient(90deg, #FF7E5F, #FEB47B);
+    background-image: linear-gradient(90deg, #FF7E5F, #FEB47B);
+    --tw-gradient-from: #f97316;
+    --tw-gradient-to: #ec4899;
     color: #fff;
     padding: 20px;
 }
-
-.testimonials .brands {
+.testimonials img{
+      display: flex;
+      align-items: center;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 9999px;
+      margin-right: 1rem;
+}
+.buttons{
     display: flex;
-    justify-content: space-around;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #fff;
+    border-radius: 9999px
+}
+.buttons i{
+    align-items: center;
+}
+.testimonials .Logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 6rem;
 }
